@@ -36,7 +36,7 @@ def main():
     layout = [
         [sg.Text('Library Name:'), sg.InputText(key='-LIBRARY-')],
         [sg.Text('Target Directory:'), sg.InputText(key='-DIR-'), sg.FolderBrowse()],
-        [sg.Button('Install Library'), sg.Button('Copy Log'), sg.Button('GitHub Repo')],
+        [sg.Button('Install Library'), sg.Button('Copy Log'), sg.Button('GitHub Repo https://github.com/JustLachin/PyLibCopy')],
         [sg.ProgressBar(max_value=1, orientation='h', size=(40, 20), key='-PROGRESS-')],
         [sg.Multiline(size=(60, 20), key='-LOG-', disabled=True)]
     ]
@@ -91,7 +91,7 @@ def main():
             sg.popup('Log text copied to clipboard!', title='Success')
 
         # When the GitHub Repo button is clicked
-        if event == 'GitHub Repo':
+        if event == 'GitHub Repo https://github.com/JustLachin/PyLibCopy':
             webbrowser.open('https://github.com/JustLachin/PyLibCopy')
 
     # Close the window
