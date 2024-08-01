@@ -47,7 +47,7 @@ class PyLibCopy(QWidget):
         header_layout = QHBoxLayout()
         logo_label = QLabel()
         logo_pixmap = QPixmap("logo.png")  # Add your logo file
-        logo_label.setPixmap(logo_pixmap.scaled(50, 50, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        logo_label.setPixmap(logo_pixmap.scaled(150, 150, Qt.KeepAspectRatio, Qt.SmoothTransformation))
         header_layout.addWidget(logo_label)
         self.title_label = QLabel("<h2>PyLibCopy</h2>")
         self.title_label.setAlignment(Qt.AlignCenter)  # Metni ortalama
